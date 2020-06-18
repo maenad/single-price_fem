@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  background-color: #e5eff5;
+}
+
+.flex-wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.general-container {
+  background-color: #e5eff5;
+  width: 35vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.general-container .subtitle {
+  color: #c0df34;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+}
+
+.general-container .top {
+  background-color: white;
+  padding: 3em;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.general-container .top h1 {
+  color: #2ab2af;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.general-container .top .top-info {
+  color: #98a6bd;
+}
+
+.general-container .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.general-container .bottom .subtitle {
+  color: white;
+}
+
+.general-container .bottom .container {
+  background-color: #2ab2af;
+  width: 50%;
+  padding: 3em;
+  border-bottom-left-radius: 1rem;
+}
+
+.general-container .bottom .container p {
+  color: white;
+  margin-top: .5rem;
+}
+
+.general-container .bottom .container .sub-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+.general-container .bottom .container .sub-cost .money {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.general-container .bottom .container .sub-cost .timeframe {
+  margin-left: 1rem;
+}
+
+.general-container .bottom .container .sub-cost .timeframe p {
+  color: #e5eff5;
+}
+
+.general-container .bottom .container button {
+  background-color: #c0df34;
+  width: 100%;
+  margin-top: 2rem;
+  height: 3rem;
+  border: none;
+  border-radius: .5rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Karla', sans-serif;
+}
+
+.general-container .bottom .right {
+  background-color: #2abbb9;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0rem;
+}
+
+.general-container .bottom .right p {
+  margin: 0;
+}
+
+.attribution {
+  position: absolute;
+  display: block;
+  bottom: 1em;
+  text-align: center;
+  width: 100vw;
+}
+/*# sourceMappingURL=style.css.map */

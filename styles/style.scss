@@ -1,0 +1,117 @@
+@import "variables.scss";
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: $light-gray;
+}
+
+.flex-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.general-container {
+    background-color: $light-gray;
+    width: 35vw;
+    align-self: center;
+
+    .subtitle {
+        color: $bright-yellow;
+        font-weight: 700;
+        font-size: 1.2em;
+        margin-bottom: 1rem;
+    }
+    .top {
+        background-color: white;
+        padding: 3em;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+
+        h1 {
+            color: $cyan;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .top-info {
+            color: $grayish-blue;
+        }
+    }
+    .bottom {
+        display: flex;
+
+
+        .subtitle {
+            color: white;
+        }
+
+        .container {
+            background-color: $cyan;
+            width: 50%;
+            padding: 3em;
+            border-bottom-left-radius: 1rem;
+
+            .left {
+            }
+
+            p {
+                color: white;
+                margin-top: .5rem;
+            }
+            .sub-cost {
+                display: flex;
+                color: white;
+
+                .money {
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+                .timeframe {
+                    margin-left: 1rem;
+
+                    p {
+                        color: $light-gray;
+                    }
+
+                }
+            }
+            button {
+                background-color: $bright-yellow;
+                width: 100%;
+                margin-top: 2rem;
+                height: 3rem;
+                border: none;
+                border-radius: .5rem;
+                color: white;
+                font-weight: 700;
+                font-size: 1rem;
+                font-family: 'Karla', sans-serif;
+
+            }
+        }
+        .right {
+            background-color: hsl(179, 63%, 45%);
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 0rem;
+
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+.attribution {
+    position: absolute;
+    display: block;
+    bottom: 1em;
+    text-align: center;
+    width: 100vw;
+}
