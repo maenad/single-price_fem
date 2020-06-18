@@ -8,7 +8,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   background-color: #e5eff5;
 }
 
@@ -73,7 +73,7 @@ body {
 
 .general-container .bottom .container p {
   color: white;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .general-container .bottom .container .sub-cost {
@@ -102,11 +102,13 @@ body {
   margin-top: 2rem;
   height: 3rem;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: white;
   font-weight: 700;
   font-size: 1rem;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
+  -webkit-box-shadow: 11px 12px 24px -11px rgba(0, 0, 0, 0.81);
+  box-shadow: 11px 12px 24px -11px rgba(0, 0, 0, 0.81);
 }
 
 .general-container .bottom .right {
@@ -125,5 +127,50 @@ body {
   bottom: 1em;
   text-align: center;
   width: 100vw;
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 13px;
+  }
+  .general-container {
+    width: 90vw;
+    height: 95vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .general-container .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .general-container .bottom .container {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .general-container .left {
+    background-color: white;
+    padding: 3em;
+  }
+  .general-container .right {
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .attribution {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
