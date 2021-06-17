@@ -19,7 +19,7 @@ body {
 
 .general-container {
   background-color: $light-gray;
-  width: 35vw;
+  min-width: 35vw;
   align-self: center;
 
   .subtitle {
@@ -102,52 +102,35 @@ body {
     }
   }
 }
-.attribution {
-  position: absolute;
-  display: block;
-  bottom: 1em;
-  text-align: center;
-  width: 100vw;
-}
 
-@media (max-width: 1000px) {
-    body {
-        font-size: 13px;
-    }
+@media (max-width: 650px) {
+  body {
+    font-size: 13px;
+  }
   .general-container {
     width: 90vw;
     height: 95vh;
     display: flex;
     align-content: flex-start;
     flex-direction: column;
+    margin: 5em 0em;
 
     .bottom {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
 
-        .container {
-            width: 100%;
-            border-radius: 0px;
-        }
-    
-    }
-    .left {
-        background-color: white;
-        padding: 3em;
-   
-  }
-    .right {
+      .container {
+        width: 100%;
+        border-radius: 0px;
+      }
+      .right {
         border-top-right-radius: 0rem;
         border-top-left-radius: 0rem;
-        border-bottom-right-radius: 1rem; 
+        border-bottom-right-radius: 1rem;
         border-bottom-left-radius: 1rem;
-
-    }    }
-
-
+      }
+    }
 
 
-  .attribution {
-    display: none;
   }
 }
